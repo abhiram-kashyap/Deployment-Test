@@ -6,7 +6,7 @@ public class AccountHandler {
      List<string> accNames = new List<string>();
         for(Account acc : newList){
             accNames.add(acc.Name);
-                system.debug('test');
+                system.debug('test Hello');
             if (acc.Sample_Text__c == null){
                 acc.Sample_Text__c = 'Welcome';
             }
