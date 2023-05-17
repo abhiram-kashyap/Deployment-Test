@@ -1,8 +1,8 @@
 name: OrgCreation
-'on':
+on:
   pull_request:
     branches: master
-  jobs:
+jobs:
     scratch-org-test:
       runs-on: ubuntu-latest
       if: ${{ github.actor != 'dependabot[bot]' }}
