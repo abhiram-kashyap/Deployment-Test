@@ -3,6 +3,7 @@ public class AccountHandler {
     
     public static void beforeInsert(List<Account> newList , Map<ID,Account> newMap)
     {
+            system.debug('Testing Salesforce CLI instllation');
      List<string> accNames = new List<string>();
         for(Account acc : newList){
             accNames.add(acc.Name);
