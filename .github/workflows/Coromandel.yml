@@ -21,7 +21,7 @@ jobs:
             echo "$HOME/sfdx/bin" >> $GITHUB_PATH
 
             ~/sfdx/bin/sfdx version
-		    - bash:
+        - bash:
                sfdx config:set restDeploy=false --global
         displayName: Set SOAP API Deployment
         - bash:
