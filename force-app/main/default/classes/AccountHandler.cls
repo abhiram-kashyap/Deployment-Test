@@ -3,7 +3,7 @@ public class AccountHandler {
     
     public static void beforeInsert(List<Account> newList , Map<ID,Account> newMap)
     {
-            system.debug('Testing Salesforce CLI instllation : test 2');
+            system.debug('Testing Auth method');
      List<string> accNames = new List<string>();
         for(Account acc : newList){
             accNames.add(acc.Name);
