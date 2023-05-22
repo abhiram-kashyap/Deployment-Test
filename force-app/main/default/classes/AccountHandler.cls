@@ -3,7 +3,7 @@ public class AccountHandler {
     
     public static void beforeInsert(List<Account> newList , Map<ID,Account> newMap)
     {
-            system.debug('coromandel 4 update');
+            system.debug('coromandel 5 update');
 
      List<string> accNames = new List<string>();
         for(Account acc : newList){
