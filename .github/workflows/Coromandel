@@ -1,7 +1,7 @@
 name: Coromandel
 on:
   pull_request:
-    branches: CICD
+    branches: master
 jobs:
    scratch-org-test:
       runs-on: ubuntu-latest
