@@ -1,7 +1,7 @@
 name: OrgCreation
 on:
   pull_request:
-    branches: master
+    branches: CICD
 jobs:
    scratch-org-test:
       runs-on: ubuntu-latest
