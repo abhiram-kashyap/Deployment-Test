@@ -1,4 +1,4 @@
-name: OrgCreation
+name: Coromandel
 on:
   pull_request:
     branches: CICD
