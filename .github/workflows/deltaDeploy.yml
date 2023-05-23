@@ -45,7 +45,7 @@ jobs:
       - name: "Authenticate to Org"
         run: |
           echo ${{ secrets.PRIVATE_AUTH_SECRET }} > ./PRIVATE_AUTH_SECRET.txt
-          sfdx force:auth:sfdxurl:store -f ./PRIVATE_AUTH_SECRET.txt --setdefaultusername
+          sfdx force:auth:sfdxurl:store -f ./PRIVATE_AUTH_SECRET.txt -a MyDefaultOrg
       # Check-only deploy
       - name: "Check-only delta deploy"
         run: |
@@ -59,7 +59,7 @@ jobs:
           echo
           echo "--- Delta Check-Only Deploy ---"
           if [ -z "$APEX_CLASSES" ]; then
-            sfdx force:source:deploy -x package/package.xml -w 30 --checkonly
-          else
-            sfdx force:source:deploy -x package/package.xml -w 30 -l RunSpecifiedTests -r "$APEX_CLASSES" --checkonly
+            sfdx force:source:deploy -x package/package.xml -w 30 -u MyDefaultOrg --checkonly 
+          else 
+            sfdx force:source:deploy -x package/package.xml -w 30 -u MyDefaultOrg -l RunSpecifiedTests -r "$APEX_CLASSES" --checkonly
           fi
