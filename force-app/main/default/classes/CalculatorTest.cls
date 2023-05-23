@@ -2,7 +2,7 @@
 public class CalculatorTest {
     @IsTest
     public static void testAddNumbers() {
-            system.debug('Test test 5');
+            system.debug('Test test 6');
         Integer num1 = 5;
         Integer num2 = 10;
         
