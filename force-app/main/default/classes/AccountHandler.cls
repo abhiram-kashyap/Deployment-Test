@@ -3,7 +3,7 @@ public class AccountHandler {
     
     public static void beforeInsert(List<Account> newList , Map<ID,Account> newMap)
     {
-            system.debug('coromandel 9 update');
+            system.debug('Delta deploy 23rd');
 
      List<string> accNames = new List<string>();
         for(Account acc : newList){
