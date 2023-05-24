@@ -4,6 +4,7 @@ import { loadStyle } from 'lightning/platformResourceLoader';
 import CustomDataTableResource from '@salesforce/resourceUrl/CustomDataTable';
 
 export default class DatatablePicklist extends LightningElement {
+    //comments for testing
     @api label;
     @api placeholder;
     @api options;
