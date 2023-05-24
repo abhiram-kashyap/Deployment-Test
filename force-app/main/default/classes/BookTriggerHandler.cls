@@ -5,7 +5,7 @@ public class BookTriggerHandler {
         for(Books__c book : newList){
             book.Currency__c = 0.9 * book.Currency__c;
         }
-            system.debug('Test');
+            system.debug('Test one');
     }
     
     public static void genericBeforeUpdate(List<Books__c> newList ,List<Books__c> oldList, Map<ID,Books__c> newMap, Map<ID,Books__c> oldMap){
